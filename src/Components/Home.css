@@ -37,7 +37,11 @@
   /* The section below is for CSS for the sample pictures imported*/
   body {
     text-align: center;
-    background-color: #1db198;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%) !important;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
   }
   
   div {
@@ -113,7 +117,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(167, 85, 85);
     max-width: 80%;
     margin: auto;
     height: 80%;
@@ -132,7 +136,7 @@
   
   .secondhalf img {
     width: 70%;
-    border: 4px solid white;
+    border: 4px solid rgb(179, 78, 78);
     border-radius: 150px;
     display: block;
     margin: auto;
@@ -152,7 +156,7 @@
   margin-left: 20px;
   height: 33px;
   width: 70px;
-    color: #fff;
+    color: #a42929;
   background-color: #000;
     cursor: pointer;
   }
@@ -187,4 +191,8 @@
     color: rgb(173, 48, 48);
   }
   
-  
+  p {
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #999;
+  }

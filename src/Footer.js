@@ -18,9 +18,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <p className="col-sm">
+                    <nav className="col-sm">
                         &copy;{new Date().getFullYear()} Ram & Bytes | ALL RIGHTS RESERVED | PRIVACY NOTICE | CONTACT US, BUT DON'T PLS
-                    </p>
+                    </nav>
                 </div>
             </div>
         </div>    
