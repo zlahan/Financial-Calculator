@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import NavBar from './NavBar'
 
 import { useNavigate } from 'react-router-dom';
 
@@ -45,28 +44,60 @@ const Home = () => {
 
                     <div class="image-section">
                       <div class="section-style">
-                        <img src="" alt="" />
+                        <img src="" 
+                        alt="" />
                         <p>Sample Picture 1</p>
                       </div>
 
                       <div class="section-style">
-                        <img src="" alt="" />
+                        <img src="" 
+                        alt="" />
                         <p>Sample Picture 2</p>
                       </div>
                     </div>
 
                     <div class="image-section">
                       <div class="section-style">
-                        <img src="" alt="" />
+                        <img src="" 
+                        alt="" />
                         <p>Sample Picture 3</p>
                       </div>
 
                       <div class="section-style">
-                        <img src="" alt="" />
+                        <img src="" 
+                        alt="" />
                         <p>Sample Picture 4</p>
                       </div>
                     </div>
-                   
+
+                    <div class="image-section">
+                      <div class="section-style">
+                        <img src="" 
+                        alt="" />
+                        <p>Sample Picture 5</p>
+                      </div>
+
+                      <div class="section-style">
+                        <img src="" 
+                        alt="" />
+                        <p>Sample Picture 6</p>
+                      </div>
+                    </div>
+
+                    <div class="image-section">
+                      <div class="section-style">
+                        <img src="" 
+                        alt="" />
+                        <p>Sample Picture 7</p>
+                      </div>
+
+                      <div class="section-style">
+                        <img src="" 
+                        alt="" />
+                        <p>Sample Picture 8</p>
+                      </div>
+                    </div>
+                    
                   </body>
                 </html>
           </div>
