@@ -43,27 +43,27 @@ const Home = () => {
                     <h4 id='date'></h4>
 
                     <div class="image-section">
-                      <div class="section-style">
-                        <img src="" 
+                      {/* <div class="section-style"> */} <div>
+                        <img src="C:\Users\Han\Desktop\React\seniorproject\src\Images\1.jpg" 
                         alt="" />
                         <p>Sample Picture 1</p>
                       </div>
 
-                      <div class="section-style">
-                        <img src="" 
+                      {/* <div class="section-style"> */} <div>
+                        <img src="C:\Users\Han\Desktop\React\seniorproject\src\Images\2.gif" 
                         alt="" />
                         <p>Sample Picture 2</p>
                       </div>
                     </div>
 
                     <div class="image-section">
-                      <div class="section-style">
-                        <img src="" 
+                      {/* <div class="section-style"> */} <div>
+                        <img src="C:\Users\Han\Desktop\React\seniorproject\src\Images\3.png" 
                         alt="" />
                         <p>Sample Picture 3</p>
                       </div>
 
-                      <div class="section-style">
+                      {/* <div class="section-style"> */} <div>
                         <img src="" 
                         alt="" />
                         <p>Sample Picture 4</p>
@@ -71,13 +71,13 @@ const Home = () => {
                     </div>
 
                     <div class="image-section">
-                      <div class="section-style">
+                      {/* <div class="section-style"> */} <div>
                         <img src="" 
                         alt="" />
                         <p>Sample Picture 5</p>
                       </div>
 
-                      <div class="section-style">
+                      {/* <div class="section-style"> */} <div>
                         <img src="" 
                         alt="" />
                         <p>Sample Picture 6</p>
@@ -85,19 +85,19 @@ const Home = () => {
                     </div>
 
                     <div class="image-section">
-                      <div class="section-style">
+                      {/* <div class="section-style"> */} <div>
                         <img src="" 
                         alt="" />
                         <p>Sample Picture 7</p>
                       </div>
 
-                      <div class="section-style">
+                      {/* <div class="section-style"> */} <div>
                         <img src="" 
                         alt="" />
                         <p>Sample Picture 8</p>
                       </div>
                     </div>
-                    
+
                   </body>
                 </html>
           </div>
