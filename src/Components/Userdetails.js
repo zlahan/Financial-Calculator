@@ -35,8 +35,8 @@ export default class Userdetails extends Component {
 	render() {
 		return (
 			<div>
-				Name<h1>{this.state.userData.fname}</h1>
-				Email <h1>{this.state.userData.email}</h1><br/>
+				Name: <h1>{this.state.userData.fname}</h1>
+				Email: <h1>{this.state.userData.email}</h1><br/>
         <button onClick={this.logOut}> Log Out </button>
 			</div>
 		)
