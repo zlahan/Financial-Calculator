@@ -1,173 +1,121 @@
 import React, { Component } from 'react'
+import  './Calculate.css';
 
 export default class Calculate extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      clamount:'',
+      clterm:'', 
+      cirate:'', 
+      cbcost:'', 
+      ccbal:'', 
+      ccapr:'',
+      damt:'', 
+      dapy:'', 
+      dterm:'', 
+      mlamount:'', 
+      mlterm:'',
+      mirate:'',
+      mbcost:''
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const { clamount, clterm, cirate, cbcost, ccbal, ccapr, damt, dapy, dterm, mlamount, mlterm, mirate, mbcost} = this.state;
+    console.log(clamount, clterm, cirate, cbcost, ccbal, ccapr, damt, dapy, dterm, mlamount, mlterm, mirate, mbcost);
+    fetch("http://localhost:5000/financialdata", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        clamount,
+        clterm, 
+        cirate, 
+        cbcost, 
+        ccbal, 
+        ccapr, 
+        damt, 
+        dapy, 
+        dterm, 
+        mlamount, 
+        mlterm,
+        mirate,
+        mbcost
+      }),
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data,"FinancialData");
+      });
+
+  }
+  
   render() {
     return (
       
-      <form> 
-        <div>
-          <form>
-            <h3> Closed End Loan </h3>
+      <form onSubmit={this.handleSubmit}>
 
-              <div>
-                <label>Loan Amount: </label>
-                <input
-                  type="Loan Amount"
-                  placeholder="Enter Loan Amount"
-                />
-              </div>
+        <br />
+        <h2> Closed-End Loan </h2>
+          <label for="lamount"> Loan Amount </label>
+          <input type="text" id="lamount" name="clamount"placeholder="Enter Loan Amount" 
+          onChange={(e) => this.setState({ clamount: e.target.value })}/><br />
+          <label for="lterm"> Loan Term </label>
+          <input type="text" id="lterm" name="clterm" placeholder="Enter Loan Term (months)"
+          onChange={(e) => this.setState({ clterm: e.target.value })}/><br />
+          <label for="irate"> Interest Rate </label>
+          <input type="text" id="irate" name="cirate" placeholder="Enter Interest Rate"
+          onChange={(e) => this.setState({ cirate: e.target.value })}/><br />
+          <label for="bcost"> Backend Cost </label>
+          <input type="text" id="bcost" name="cbcost" placeholder="Enter (optional) Backend Cost"
+          onChange={(e) => this.setState({ cbcost: e.target.value })}/><br />
+          <br />
 
-              <div>
-                <label>Loan Term: </label>
-                <input
-                  type="Loan Term"
-                  placeholder="Enter Loan Term"
-                />
-              </div>
+        <h2> Credit Card </h2>
+          <label for="bal"> Balance </label>
+          <input type="text" id="bal" name="ccbal" placeholder="Enter Balance"
+          onChange={(e) => this.setState({ ccbal: e.target.value })}/><br />
+          <label for="apr"> APR </label>
+          <input type="text" id="apr" name="ccapr" placeholder="Enter APR"
+          onChange={(e) => this.setState({ ccapr: e.target.value })}/><br />
+          <br />
 
-              <div>
-                <label>Interest Rate: </label>
-                <input
-                  type="Interest Rate"
-                  placeholder="Enter Interest Rate"
-                />
-              </div>
+        <h2> Deposit Account </h2>
+          <label for="amt"> Amount </label>
+          <input type="text" id="amt" name="damt" placeholder="Enter Deposit Amount"
+          onChange={(e) => this.setState({ damt: e.target.value })}/><br />
+          <label for="apy"> APY </label>
+          <input type="text" id="apy" name="dapy" placeholder="Enter APY"
+          onChange={(e) => this.setState({ dapy: e.target.value })}/><br />
+          <label for="term"> Term </label>
+          <input type="text" id="term" name="dterm" placeholder="Enter (optional) Term (months)"
+          onChange={(e) => this.setState({ dterm: e.target.value })}/><br />
+          <br />
 
-              <div>
-                <label>Backend Cost: </label>
-                <input
-                  type="Backend Cost"
-                  placeholder="Enter Backend Cost"
-                />
-              </div>
+        <h2> Mortgage Loan </h2>
+          <label for="lamount"> Loan Amount </label>
+          <input type="text" id="lamount" name="mlamount" placeholder="Enter Loan Amount"
+          onChange={(e) => this.setState({ mlamount: e.target.value })}/><br />
+          <label for="lterm"> Loan Term </label>
+          <input type="text" id="lterm" name="mlterm" placeholder="Enter Loan Term (months)"
+          onChange={(e) => this.setState({ mlterm: e.target.value })}/><br />
+          <label for="irate"> Interest Rate </label>
+          <input type="text" id="irate" name="mirate" placeholder="Enter Interest Rate"
+          onChange={(e) => this.setState({ mirate: e.target.value })}/><br />
+          <label for="bcost"> Backend Cost </label>
+          <input type="text" id="bcost" name="mbcost" placeholder="Enter Backend Cost"
+          onChange={(e) => this.setState({ mbcost: e.target.value })}/><br />
+          <br />
+          <button type="submit">
+            Submit
+          </button>
 
-              <div>
-                <button type="submit">
-                  Submit
-                </button>
-              </div>
-            
-          </form>
-        </div>
-
-        <div>
-          <form>
-            <h3> Credit Card Payment </h3>
-
-              <div>
-                <label>Balance: </label>
-                <input
-                  type="Balance"
-                  placeholder="Enter Balance"
-                />
-              </div>
-
-              <div>
-                <label>APR: </label>
-                <input
-                  type="APR"
-                  placeholder="Enter APR"
-                />
-              </div>
-
-              <div>
-                <label>(optional) Late Payment: </label>
-                <input
-                  type="Late Payment"
-                  placeholder="Enter Late Payment"
-                />
-              </div>
-
-              <div>
-                  <button type="submit">
-                  Submit
-                  </button>
-              </div>
-            
-          </form>
-        </div>
-
-        <div>
-          <form>
-            <h3> Deposit Account </h3>
-
-            <div>
-              <label>Deposit Amount: </label>
-              <input
-                type="Deposit Amount"
-                placeholder="Enter Deposit Amount"
-              />
-            </div>
-
-            <div>
-              <label>APY: </label>
-              <input
-                type="APY"
-                placeholder="Enter APY"
-              />
-            </div>
-
-            <div>
-              <button type="submit">
-                Submit
-              </button>
-            </div>
-        
-          </form>
-        </div>
-
-        <div>
-          <form>
-            <h3> Mortgage Calculator </h3>
-
-            <div>
-              <label>Loan Amount: </label>
-              <input
-                type="Loan Amount"
-                placeholder="Enter Loan Amount"
-              />
-            </div>
-
-            <div>
-              <label>APR: </label>
-              <input
-                type="APR"
-                placeholder="Enter Loan Term"
-              />
-            </div>
-
-            <div>
-              <label>Interest Rate: </label>
-              <input
-                type="Interest Rate"
-                placeholder="Enter Interest Rate"
-              />
-            </div>
-
-            <div>
-              <label>Loan Term: </label>
-              <input
-                type="Loan Term"
-                placeholder="Enter Loan Term"
-              />
-            </div> 
-            
-            <div>
-              <label>Backend Cost: </label>
-              <input
-                type="Backend Cost"
-                placeholder="Enter Backend Cost"
-              />
-            </div>
-
-            <div>
-              <button type="submit">
-                Submit
-              </button>
-            </div>
-        
-          </form>
-        </div>
       </form>
     )
   }

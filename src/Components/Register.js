@@ -95,7 +95,7 @@ export default class Register extends Component {
           </button>
         </div>
         <p>
-          Already registered <a href="/sign-in">sign in?</a>
+          Already registered? <a href="/sign-in">sign in</a>
         </p>
       </form>
     )

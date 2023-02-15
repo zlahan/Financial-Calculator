@@ -8,7 +8,6 @@ const NavBar = () => {
                 <nav>
                     <NavLink to="/Home"><button onClick = "Home" class = "button"> Home sweet home </button></NavLink>
                     <NavLink to="/Calculate"><button onClick = "#Calculate" class = "button"> Calculate lul </button></NavLink>
-                    <NavLink to="/Contact"><button onClick = "#Contact" class = "button"> Contact hehe </button></NavLink>
                     <NavLink to="/Login"><button onClick = "#Login" class = "button"> Login :D </button></NavLink>
                     <NavLink to="/Register"><button onClick = "#Register" class = "button"> Register! </button></NavLink>
                     <NavLink to="/Userdetails"><button onClick = "#Userdetails" class = "button"> Yo Detailz </button></NavLink>

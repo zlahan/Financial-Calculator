@@ -7,20 +7,6 @@ const Home = () => {
   const navigate = useNavigate();
       return (
           <div>
-            {/* the stuff below this is the nav bar */}
-              {/* <nav class = "navbar background">
-                  <ul class = "nav-list">
-                      <div class = "logo"> 
-                          <img src = "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9023/9023969_sa.jpg;maxHeight=640;maxWidth=550"
-                          alt = "Logo lmafoasdof" />
-                      </div>
-                      <li><button onClick = "#Login" id = "button"> Login lol</button></li>
-                      <li><button onClick = "#Home" id = "button"> Home lol</button></li>
-                      <li><button onClick = "#Calculate" id = "button"> Calculate lol</button></li>
-                      <li><button onClick = "#Contact Us" id = "button"> Contact lol</button></li>
-                  </ul>
-                </nav> */}
-
                 {/* The section below is for the body of the homepage */}
                 <html>
                   <head>
@@ -29,6 +15,7 @@ const Home = () => {
                     <script async src="./javascript/index.js"></script>
                   </head>
                   <body>
+                    <br />
                     <h1>This is a Financial Calculator for calculating different things</h1>
                     <h2>This program will be used to calculate loans, CDs, Credit Cards, and Mortgages</h2>
                     <h2>You will also get a visual representation of how your finances will look</h2>
