@@ -10,7 +10,7 @@
     font-family: "Fira Sans", sans-serif;
     background-repeat: no-repeat;
     background: linear-gradient(128deg, rgb(2, 88, 25), rgba(0, 0, 0, 0) 70.71%),
-                linear-gradient(329deg, rgb(2, 2, 70), rgba(0, 0, 0, 0) 70.71%)
+                linear-gradient(329deg, rgb(3, 3, 173), rgba(0, 0, 0, 0) 70.71%)
                 !important;
   }
   
@@ -31,7 +31,7 @@
     width: 1000px;
     height: 700px;
     background: linear-gradient(128deg, rgb(2, 88, 25), rgba(0, 0, 0, 0) 70.71%),
-                linear-gradient(329deg, rgb(2, 2, 70), rgba(0, 0, 0, 0) 70.71%)
+                linear-gradient(329deg, rgb(3, 3, 173), rgba(0, 0, 0, 0) 70.71%)
                 !important;
     border-style: solid;
     border-color: rgb(255, 255, 255);
