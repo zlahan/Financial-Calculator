@@ -95,9 +95,10 @@ export default class Register extends Component {
             Register Now
           </button>
         </div>
-        <p>
+        <div>
           Already registered? <a href="/sign-in">sign in</a>
-        </p>
+        </div>
+        <br />
       </form>
     )
   }

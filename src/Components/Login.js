@@ -80,9 +80,10 @@ export default class Login extends Component {
             Submit
           </button>
         </div>
-        <p>
+        <div>
           Forgot <a href="#">password?</a>
-        </p>
+        </div>
+        <br />
       </form>
     )
   }
