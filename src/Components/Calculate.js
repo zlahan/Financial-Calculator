@@ -115,7 +115,6 @@ export default class Calculate extends Component {
           <button type="submit">
             Submit
           </button>
-
       </form>
     )
   }
