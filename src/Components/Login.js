@@ -42,7 +42,7 @@ export default class Login extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <br />
+        <br /><br />
         <h2>Sign In</h2>
 
         <div>

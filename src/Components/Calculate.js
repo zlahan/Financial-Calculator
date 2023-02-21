@@ -61,7 +61,7 @@ export default class Calculate extends Component {
       
       <form onSubmit={this.handleSubmit}>
 
-        <br />
+        <br /><br />
         <h2> Closed-End Loan </h2>
           <label for="lamount"> Loan Amount </label>
           <input type="text" id="lamount" name="clamount"placeholder="Enter Loan Amount" 
