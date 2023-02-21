@@ -42,12 +42,13 @@ export default class Register extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h3>Register</h3>
+        <br />
+        <h2>Register</h2>
 
         <div>
           <label>First Name: </label>
           <input
-            type="firstName"
+            type="text"
             placeholder="Enter First Name"
             onChange={(e)=>this.setState({ fname: e.target.value})}
           />
@@ -56,7 +57,7 @@ export default class Register extends Component {
         <div>
           <label>Last Name: </label>
           <input
-            type="lastName"
+            type="text"
             placeholder="Enter Last Name"
             onChange={(e)=>this.setState({ lname: e.target.value})}
           />
@@ -65,7 +66,7 @@ export default class Register extends Component {
         <div>
           <label>Email: </label>
           <input
-            type="email"
+            type="text"
             placeholder="Enter Email"
             onChange={(e)=>this.setState({ email: e.target.value})}
           />
@@ -73,7 +74,7 @@ export default class Register extends Component {
 
         <div>
           <label>Username: </label>
-          <input type="username" placeholder="Enter Username" 
+          <input type="text" placeholder="Enter Username" 
           onChange={(e)=>this.setState({ uname: e.target.value})}
           />
 
@@ -83,7 +84,7 @@ export default class Register extends Component {
         <div>
           <label>Password: </label>
           <input
-            type="password"
+            type="text"
             placeholder="Enter Password"
             onChange={(e)=>this.setState({ password: e.target.value})}
           />

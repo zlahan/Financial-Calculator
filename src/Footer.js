@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css"
+
 const Footer = () => {
     return(
         <div className="main-footer">
@@ -7,7 +8,8 @@ const Footer = () => {
                 <div className="row">
                     <hr />
                     <div className="col">
-                        <h3>Ram & Bytes</h3>
+                        <h2>Ram & Bytes</h2>
+                        <br />
                         <ul className="list">
                             <nav>University of Washington Tacoma</nav>
                             <nav>253-692-4000</nav>
@@ -16,6 +18,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
+                
+                <br />
                 <div className="row">
                     <nav className="col-sm">
                         &copy;{new Date().getFullYear()} Ram & Bytes | ALL RIGHTS RESERVED | PRIVACY NOTICE | CONTACT US, BUT DON'T PLS

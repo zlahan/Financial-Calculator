@@ -42,12 +42,13 @@ export default class Login extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
+        <br />
+        <h2>Sign In</h2>
 
         <div>
           <label>Username: </label>
           <input
-            type="username"
+            type="text"
             placeholder="Enter Username"
             onChange={(e) => this.setState({uname: e.target.value})}
           />
@@ -56,7 +57,7 @@ export default class Login extends Component {
         <div>
           <label>Password: </label>
           <input
-            type="password"
+            type="text"
             placeholder="Enter password"
             onChange={(e) => this.setState({password: e.target.value})}
           />
