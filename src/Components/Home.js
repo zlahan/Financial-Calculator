@@ -1,10 +1,6 @@
 import React from 'react';
 import './Home.css';
 
-import Closedend from "./Closedend"
-import Creditcard from "./Creditcard"
-import Depositaccount from "./Depositaccount"
-import Mortgage from "./Mortgage"
 
 import { Link, NavLink, Route } from 'react-router-dom';
 
@@ -29,62 +25,45 @@ const Home = () => {
             
               <nav> 
                 <div className= "rectangle">
-                <br />
-                <br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <h1>Closed-End Loans</h1>
-                <br />
-                <br />
+                <br /><br />
                 <h2>This box is for Closed-End Loans, click the</h2>
                 <h2>button below to open the calculator.</h2>
-                <br />
-                <br />
-                <br />
-                {/* <Route path="/ClosedEnd" element={<Closedend />} /> */}
-                <NavLink to={Closedend}><button onClick = "#Closedend" class = "button"> Click here for the Closed-End Loan Calculator</button></NavLink>
+                <br /><br /><br />
+                <NavLink to="/ClosedEnd"><button onClick = "#Closedend" class = "button"> Click here for the Closed-End Loan Calculator</button></NavLink>
                 </div>
 
                 <div className= "rectangle">
-                <br />
-                <br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <h1>Credit Card</h1>
-                <br />
-                <br />
+                <br /><br />
                 <h2>This box is for Credit Cards, click the</h2>
                 <h2>button below to open the calculator.</h2>
-                <br />
-                <br />
-                <br />
-                <NavLink to={Creditcard}><button onClick = "#Creditcard" class = "button"> Click here for the Credit Card Calculator</button></NavLink>
+                <br /><br /><br />
+                <NavLink to="/CreditCard"><button onClick = "#Creditcard" class = "button"> Click here for the Credit Card Calculator</button></NavLink>
                 </div>
               </nav>
 
               <nav> 
                 <div className= "rectangle">
-                <br />
-                <br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <h1>Deposit Account</h1>
-                <br />
-                <br />
+                <br /><br />
                 <h2>This box is for Deposit Accounts, click the</h2>
                 <h2>button below to open the calculator.</h2>
-                <br />
-                <br />
-                <br />
-                <NavLink to={Depositaccount}><button onClick = "#Depositaccount" class = "button"> Click here for the Deposit Account Calculator</button></NavLink>
+                <br /><br /><br />
+                <NavLink to="/DepositAccount"><button onClick = "#Depositaccount" class = "button"> Click here for the Deposit Account Calculator</button></NavLink>
                 </div>
                 
                 <div className= "rectangle">
-                <br />
-                <br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 <h1>Mortgage Loan</h1>
-                <br />
-                <br />
+                <br /><br />
                 <h2>This box is for Mortgages, click the</h2>
                 <h2>button below to open the calculator.</h2>
-                <br />
-                <br />
-                <br />
-                <NavLink to={Mortgage}><button onClick = "#Mortgage" class = "button"> Click here for the Mortgage Calculator</button></NavLink>
+                <br /><br /><br />
+                <NavLink to="/Mortgage"><button onClick = "#Mortgage" class = "button"> Click here for the Mortgage Calculator</button></NavLink>
                 </div>
               </nav>
           

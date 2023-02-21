@@ -14,6 +14,7 @@ export default class Closedend extends Component {
                     <link rel="stylesheet" href="styles/styles.css" />
                     <script async src="./javascript/index.js"></script>
                   </head>
+                  
                   <body >
                     <br />
                     <h1>This is a Financial Calculator for calculating different things</h1>
@@ -30,54 +31,58 @@ export default class Closedend extends Component {
                     <br />
 
                     <div className= "rectangle">
-                   
-      
                       <form onSubmit={this.handleSubmit}>
-
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                        <h1> Closed-End Loan </h1>
                         <br />
-                        <h2> Closed-End Loan </h2>
-                          <label for="lamount"> Loan Amount </label>
-                          <input type="text" id="lamount" name="clamount"placeholder="Enter Loan Amount" 
-                          onChange={(e) => this.setState({ clamount: e.target.value })}/><br />
-                          <label for="lterm"> Loan Term </label>
-                          <input type="text" id="lterm" name="clterm" placeholder="Enter Loan Term (months)"
-                          onChange={(e) => this.setState({ clterm: e.target.value })}/><br />
-                          <label for="irate"> Interest Rate </label>
-                          <input type="text" id="irate" name="cirate" placeholder="Enter Interest Rate"
-                          onChange={(e) => this.setState({ cirate: e.target.value })}/><br />
-                          <label for="bcost"> Backend Cost </label>
-                          <input type="text" id="bcost" name="cbcost" placeholder="Enter (optional) Backend Cost"
-                          onChange={(e) => this.setState({ cbcost: e.target.value })}/><br />
+                        <label for="lamount"> Loan Amount </label>
+                        <input type="text" id="lamount" name="clamount"placeholder="Enter Loan Amount" 
+                        onChange={(e) => this.setState({ clamount: e.target.value })}/><br />
+                        <label for="lterm"> Loan Term </label>
+                        <input type="text" id="lterm" name="clterm" placeholder="Enter Loan Term (months)"
+                        onChange={(e) => this.setState({ clterm: e.target.value })}/><br />
+                        <label for="irate"> Interest Rate </label>
+                        <input type="text" id="irate" name="cirate" placeholder="Enter Interest Rate"
+                        onChange={(e) => this.setState({ cirate: e.target.value })}/><br />
+                        <label for="bcost"> Backend Cost </label>
+                        <input type="text" id="bcost" name="cbcost" placeholder="Enter (optional) Backend Cost"
+                        onChange={(e) => this.setState({ cbcost: e.target.value })}/><br />
                         <br />
                         <button type="submit">
                             Submit
                           </button>
+                        <br />
                       </form>
-
                     </div>
 
                     <div className= "rectangle">
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                       <h1>Credit Card</h1>
-                      <br />
-                      <br />
-                      <br />
-                      <NavLink to="src\Components\Creditcard.js"><button onClick = "#Creditcard" class = "button"> Click here for the Credit Card Calculator</button></NavLink>
-                    </div>
+                      <br /><br /><br />
+                      <h2>This box is for Credit Cards, click the</h2>
+                      <h2>button below to open the calculator.</h2>
+                      <br /><br /><br /><br />
+                      <NavLink to="/CreditCard"><button onClick = "#Creditcard" class = "button"> Click here for the Credit Card Calculator</button></NavLink>
+                     </div>
 
                     <div className= "rectangle">
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                       <h1>Deposit Account</h1>
-                      <br />
-                      <br />
-                      <br />
-                      <NavLink to="src\Components\Depositaccount.js"><button onClick = "#Depositaccount" class = "button"> Click here for the Deposit Account Calculator</button></NavLink>
+                      <br /><br /><br />
+                      <h2>This box is for Deposit Accounts, click the</h2>
+                      <h2>button below to open the calculator.</h2>
+                      <br /><br /><br /><br />
+                      <NavLink to="/DepositAccount"><button onClick = "#Depositaccount" class = "button"> Click here for the Deposit Account Calculator</button></NavLink>
                     </div>
 
                     <div className= "rectangle">
+                      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                       <h1>Mortgage Loan</h1>
-                      <br />
-                      <br />
-                      <br />
-                      <NavLink to="src\Components\Mortgage.js"><button onClick = "#Mortgage" class = "button"> Click here for the Mortgage Calculator</button></NavLink>
+                      <br /><br /><br />
+                      <h2>This box is for Mortgages, click the</h2>
+                      <h2>button below to open the calculator.</h2>
+                      <br /><br /><br /><br />
+                      <NavLink to="/Mortgage"><button onClick = "#Mortgage" class = "button"> Click here for the Mortgage Calculator</button></NavLink>
                     </div>
 
                   </body>    

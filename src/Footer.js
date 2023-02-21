@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="main-footer">
             <div className="container">
                 <div className="row">
-                    <hr />
+                    <br /><hr />
                     <div className="col">
                         <h2>Ram & Bytes</h2>
                         <br />

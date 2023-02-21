@@ -29,7 +29,7 @@ export default class Login extends Component {
       .then((res) => res.json())
       .then((data) => {
         console.log(data,"userRegister");
-        if(data.status=="ok"){
+        if(data.status==="ok"){
           alert("login successful");
           window.localStorage.setItem("token",data.data);
           window.localStorage.setItem("loggedIn",true);
@@ -81,9 +81,12 @@ export default class Login extends Component {
           </button>
         </div>
         <div>
-          Forgot <a href="#">password?</a>
+          Forgot your <a href="#">password?</a>
         </div>
         <br />
+        <div>
+          Oops, you're here without an account. <a href="#">Register now!</a>
+        </div>
       </form>
     )
   }
