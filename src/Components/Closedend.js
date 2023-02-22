@@ -48,7 +48,7 @@ export default class Closedend extends Component {
                         <input type="text" id="bcost" name="cbcost" placeholder="Enter (optional) Backend Cost"
                         onChange={(e) => this.setState({ cbcost: e.target.value })}/><br />
                         <br />
-                        <button type="submit">
+                        <button type="submit" class = "button">
                             Submit
                           </button>
                         <br />

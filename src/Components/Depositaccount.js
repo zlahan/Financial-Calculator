@@ -65,7 +65,7 @@ export default class Closedend extends Component {
                         <input type="text" id="term" name="dterm" placeholder="Enter (optional) Term (months)"
                         onChange={(e) => this.setState({ dterm: e.target.value })}/><br />
                         <br />
-                        <button type="submit">
+                        <button type="submit" class = "button">
                             Submit
                           </button>
                           <br />

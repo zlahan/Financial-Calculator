@@ -51,7 +51,7 @@ export default class Closedend extends Component {
                         <input type="text" id="apr" name="ccapr" placeholder="Enter APR"
                         onChange={(e) => this.setState({ ccapr: e.target.value })}/><br />
                         <br /><br />
-                        <button type="submit">
+                        <button type="submit" class = "button">
                             Submit
                           </button>
                         <br />
