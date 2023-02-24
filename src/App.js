@@ -8,6 +8,7 @@ import Register from "./Components/Register"
 import Home from "./Components/Home"
 import Calculate from "./Components/Calculate"
 import Closedend from "./Components/Closedend"
+import Cresults from "./Components/Cresults"
 import Creditcard from "./Components/Creditcard"
 import Depositaccount from "./Components/Depositaccount"
 import Mortgage from "./Components/Mortgage"
@@ -16,7 +17,7 @@ import Mortgage from "./Components/Mortgage"
 import Footer from "./Footer"
 import Userdetails from "./Components/Userdetails"
 
-const App = () => {
+function App() {
   const isLoggedIn = window.localStorage.getItem("loggedIn");
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/Home" element={<Home />} />
         <Route path="/Calculate" element={<Calculate />} />
         <Route path="/ClosedEnd" element={<Closedend />} />
+        <Route path="/Cresults" element={<Cresults />} />
         <Route path="/DepositAccount" element={<Depositaccount />} />
         <Route path="/CreditCard" element={<Creditcard />} />
         <Route path="/Mortgage" element={<Mortgage />} />
@@ -36,6 +38,7 @@ const App = () => {
       </Routes>
   <Footer />
     </>
+
   );
 }
 

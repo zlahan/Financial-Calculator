@@ -21,6 +21,7 @@ export default class Calculate extends Component {
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+  
   handleSubmit(e) {
     e.preventDefault();
     const { clamount, clterm, cirate, cbcost, ccbal, ccapr, damt, dapy, dterm, mlamount, mlterm, mirate, mbcost} = this.state;
@@ -53,7 +54,6 @@ export default class Calculate extends Component {
     .then((data) => {
       console.log(data,"FinancialData");
       });
-
   }
   
   render() {
