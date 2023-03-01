@@ -10,8 +10,6 @@ import {
   ResponsiveContainer
 } from "recharts";
 
-// import Summary from "./Summary.jsx";
-
 function renderTooltip({ payload }) {
   if (!payload[0]) {
     return;
@@ -20,7 +18,7 @@ function renderTooltip({ payload }) {
   return <span>{`$${payload[0].value.toFixed(2)}`}</span>;
 }
 
-function ClosedEndChart({ initialAmount, period, APR }) {
+function ClosedEndChart({ initialAmount, period, apr }) {
   const data = React.useMemo(
     () => {
       const result = [];
@@ -31,27 +29,28 @@ function ClosedEndChart({ initialAmount, period, APR }) {
         }
         result.push({
           label: `${i}`,
-          value: interestValue * (1 + APR/100 * period/12),
+          value: interestValue * (1 + apr/100 * period/12),
         });
       }
       return result;
     },
-    [initialAmount, period, APR]
+    [initialAmount, period, apr]
   );
 
   return (
-    <>
-      <br /><h2>Projected Total Cost Over the Loan Term</h2>
+    <><br />
+      <h2>Projected Total Payment Amount </h2>
       <div style={{ width: "100%", height: 400 }}>
         <ResponsiveContainer>
-          <LineChart
-            width={500}
-            height={300}
+          <LineChart 
+            id="chart"
+            width={400}
+            height={400}
             data={data}
             margin={{
               top: 5,
-              right: 30,
-              left: 0,
+              right: 50,
+              left: 10,
               bottom: 5
             }}
           >
@@ -64,9 +63,7 @@ function ClosedEndChart({ initialAmount, period, APR }) {
             <Line type="monotone" dataKey="value" />
           </LineChart>
         </ResponsiveContainer>
-      </div><br />
-      <hr />
-      {/* <Summary period={period} data={data} /> */}
+      </div>
     </>
   );
 }
