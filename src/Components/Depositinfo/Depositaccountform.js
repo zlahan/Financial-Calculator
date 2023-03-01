@@ -58,7 +58,7 @@ function CompoundInterestChart({ initialAmount, period, apy, monthlyContribution
           >
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="label">
-              <Label value="Years" offset={-3} position="insideBottom" />
+              <Label value="Years" offset={-4} position="insideBottom" />
             </XAxis>
             <YAxis />
             <Tooltip content={renderTooltip} />
