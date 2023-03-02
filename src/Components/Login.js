@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
+import "./Home.css"
 
 export default class Login extends Component {
   constructor(props){
@@ -43,7 +45,7 @@ export default class Login extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <br /><br />
-        <h2>Sign In</h2>
+        <h2>Login</h2>
 
         <div>
           <label>Username: </label>
@@ -85,7 +87,8 @@ export default class Login extends Component {
         </div>
         <br />
         <div>
-          Oops, you're here without an account. <a href="#">Register now!</a>
+          Oops, you're here without an account. <NavLink to="/Register">
+          Register Now!</NavLink>
         </div>
       </form>
     )
