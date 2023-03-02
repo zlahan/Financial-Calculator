@@ -43,7 +43,6 @@ function ClosedEndChart({ initialAmount, period, apr }) {
       <div style={{ width: "100%", height: 400 }}>
         <ResponsiveContainer>
           <LineChart 
-            id="chart"
             width={400}
             height={400}
             data={data}

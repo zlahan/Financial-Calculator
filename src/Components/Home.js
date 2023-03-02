@@ -31,7 +31,8 @@ const Home = () => {
                 <h2>This box is for Closed-End Loans, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
-                <NavLink to="/ClosedEnd"><button onClick = "#Closedend" class = "button"> Click here for the Closed-End Loan Calculator</button></NavLink>
+                <NavLink to="/ClosedEnd"><button onClick = "#Closedend" class = "button"> 
+                Click here for the Closed-End Loan Calculator</button></NavLink>
                 </div>
 
                 <div className= "rectangle">
@@ -41,7 +42,8 @@ const Home = () => {
                 <h2>This box is for Credit Cards, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
-                <NavLink to="/CreditCard"><button onClick = "#Creditcard" class = "button"> Click here for the Credit Card Calculator</button></NavLink>
+                <NavLink to="/CreditCard"><button onClick = "#Creditcard" class = "button"> 
+                Click here for the Credit Card Calculator</button></NavLink>
                 </div>
               </nav>
 
@@ -53,7 +55,8 @@ const Home = () => {
                 <h2>This box is for Deposit Accounts, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
-                <NavLink to="/DepositAccount"><button onClick = "#Depositaccount" class = "button"> Click here for the Deposit Account Calculator</button></NavLink>
+                <NavLink to="/DepositAccount"><button onClick = "#Depositaccount" class = "button"> 
+                Click here for the Deposit Account Calculator</button></NavLink>
                 </div>
                 
                 <div className= "rectangle">
@@ -63,7 +66,8 @@ const Home = () => {
                 <h2>This box is for Mortgages, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
-                <NavLink to="/Mortgage"><button onClick = "#Mortgage" class = "button"> Click here for the Mortgage Calculator</button></NavLink>
+                <NavLink to="/Mortgage"><button onClick = "#Mortgage" class = "button"> 
+                Pls don't click here! Whatever you do, don't click this button!</button></NavLink>
                 </div>
               </nav>
           

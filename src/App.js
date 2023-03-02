@@ -7,7 +7,8 @@ import Login from "./Components/Login"
 import Register from "./Components/Register"
 import Home from "./Components/Home"
 import ClosedEnd from "./Components/Closedendinfo/Closedend"
-import DepositAccount from "./Components//Depositinfo/DepositAccount"
+import DepositAccount from "./Components/Depositinfo/DepositAccount"
+import Creditcards from "./Components/Creditcardinfo/Credit"
 
 import Footer from "./Footer"
 import Userdetails from "./Components/Userdetails"
@@ -22,7 +23,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/ClosedEnd" element={<ClosedEnd />} />
         <Route path="/DepositAccount" element={<DepositAccount />} />
-        {/* <Route path="/CreditCard" element={<Creditcard />} /> */}
+        <Route path="/CreditCard" element={<Creditcards />} />
         {/* <Route path="/Mortgage" element={<Mortgage />} /> */}
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />

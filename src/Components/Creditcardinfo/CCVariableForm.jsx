@@ -1,0 +1,51 @@
+import * as React from "react";
+import defaultState from "./defaultState";
+
+function VariablesForm({ onUpdate }) {
+  const [state, setState] = React.useState(defaultState);
+
+  const { initialAmount, period, Apr} = state;
+
+  return (
+    <section><br />
+      <h2>Financials</h2>
+      <div className="flex">
+        <label htmlFor="initialAmount">
+          Balance ($)
+          <input
+            type="number"
+            id="initialAmount"
+            name="initialAmount"
+            value={initialAmount}
+            onChange={({ target }) => setState({ ...state, initialAmount: Number(target.value) })}
+          /><br /><br />
+        </label>
+        <label htmlFor="period">
+           Length (Years)
+          <input
+            type="number"
+            id="period"
+            name="period"
+            value={period}
+            onChange={({ target }) => setState({ ...state, period: Number(target.value) })}
+          /><br /><br />
+        </label>
+        <label htmlFor="Apr">
+          Apr (%)
+          <input
+            type="number"
+            id="Apr"
+            name="Apr"
+            value={Apr}
+            onChange={({ target }) => setState({ ...state, Apr: Number(target.value) })}
+          /><br /><br />
+        </label>
+      </div>
+      <button type="button" onClick={() => onUpdate(state)}>
+        Update Chart
+      </button><br /><br />
+    </section>
+  );
+}
+
+export default VariablesForm;
