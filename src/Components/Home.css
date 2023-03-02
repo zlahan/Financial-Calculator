@@ -24,8 +24,8 @@
 
   .rectangle {
     display: inline-block;
-    width: 550px;
-    height: 250px;
+    width: 500px;
+    height: 200px;
     background: linear-gradient(128deg, #15caca, rgba(0, 0, 0, 0) 70.71%),
                 linear-gradient(329deg, #376805, rgba(0, 0, 0, 0) 70.71%)
                 !important;
@@ -71,4 +71,23 @@ h2 {
 
 nav {
     color: black;
+}
+
+.box {
+    width: 8%;
+    padding: 5px 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.financiallabel {
+  text-align: left;
+}
+
+.variablesform {
+  text-align: center;
 }

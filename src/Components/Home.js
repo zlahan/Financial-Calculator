@@ -25,9 +25,9 @@ const Home = () => {
             
               <nav> 
                 <div className= "rectangle">
-                <br /><br />
+                <br />
                 <h1>Closed-End Loans</h1>
-                <br /><br />
+                <br />
                 <h2>This box is for Closed-End Loans, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
@@ -36,9 +36,9 @@ const Home = () => {
                 </div>
 
                 <div className= "rectangle">
-                <br /><br />
+                <br />
                 <h1>Credit Card</h1>
-                <br /><br />
+                <br />
                 <h2>This box is for Credit Cards, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
@@ -49,9 +49,9 @@ const Home = () => {
 
               <nav> 
                 <div className= "rectangle">
-                <br /><br />
+                <br />
                 <h1>Deposit Account</h1>
-                <br /><br />
+                <br />
                 <h2>This box is for Deposit Accounts, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />
@@ -60,9 +60,9 @@ const Home = () => {
                 </div>
                 
                 <div className= "rectangle">
-                <br /><br />
+                <br />
                 <h1>Mortgage Loan</h1>
-                <br /><br />
+                <br />
                 <h2>This box is for Mortgages, click the</h2>
                 <h2>button below to open the calculator.</h2>
                 <br /><br />

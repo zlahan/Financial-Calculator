@@ -10,7 +10,7 @@ import ClosedEnd from "./Components/Closedendinfo/Closedend"
 import DepositAccount from "./Components/Depositinfo/DepositAccount"
 import Creditcards from "./Components/Creditcardinfo/Credit"
 
-import Footer from "./Footer"
+import Footer from "./Components/Footer"
 import Userdetails from "./Components/Userdetails"
 
 function App() {

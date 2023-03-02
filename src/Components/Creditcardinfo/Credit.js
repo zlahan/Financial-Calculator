@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavLink } from 'react-router-dom';
 
-import VariablesForm from "./CCVariableForm";
+import VariablesForm from "./VariableForm";
 import CreditcardChart from "./CreditcardForm";
 import defaultState from "./defaultState";
 

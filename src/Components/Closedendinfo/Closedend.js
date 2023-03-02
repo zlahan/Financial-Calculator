@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavLink } from 'react-router-dom';
 
-import VariablesForm from "./CeVariableForm";
+import VariablesForm from "./VariableForm";
 import ClosedEndChart from "./Closedendform";
 import defaultState from "./defaultState";
 

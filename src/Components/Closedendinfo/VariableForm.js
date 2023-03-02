@@ -1,18 +1,20 @@
 import * as React from "react";
 import defaultState from "./defaultState";
+import "../Home.css"
 
 function VariablesForm({ onUpdate }) {
   const [state, setState] = React.useState(defaultState);
 
-  const { initialAmount, period, apy, monthlyContribution } = state;
+  const { initialAmount, period, apr} = state;
 
   return (
     <section><br />
       <h2>Financials</h2>
       <div className="flex">
-        <label htmlFor="initialAmount">
-          Initial Funding Balance ($)
+        <label htmlFor="initialAmount" class="financiallabel">
+          Initial Amount ($): 
           <input
+            class="box"
             type="number"
             id="initialAmount"
             name="initialAmount"
@@ -20,9 +22,10 @@ function VariablesForm({ onUpdate }) {
             onChange={({ target }) => setState({ ...state, initialAmount: Number(target.value) })}
           /><br /><br />
         </label>
-        <label htmlFor="period">
-          Investment Period (Years)
+        <label htmlFor="period" class="financiallabel">
+          Loan Term (Years): 
           <input
+            class="box"
             type="number"
             id="period"
             name="period"
@@ -30,17 +33,18 @@ function VariablesForm({ onUpdate }) {
             onChange={({ target }) => setState({ ...state, period: Number(target.value) })}
           /><br /><br />
         </label>
-        <label htmlFor="apy">
-          Annual Percentage Yield (%)
+        <label htmlFor="apr" class="financiallabel">
+          APR (%): 
           <input
+            class="box"
             type="number"
-            id="apy"
-            name="apy"
-            value={apy}
-            onChange={({ target }) => setState({ ...state, apy: Number(target.value) })}
+            id="apr"
+            name="apr"
+            value={apr}
+            onChange={({ target }) => setState({ ...state, apr: Number(target.value) })}
           /><br /><br />
         </label>
-        <label htmlFor="monthlyContribution">
+        {/* <label htmlFor="monthlyContribution">
           Monthly Contribution ($) (Optional)
           <input
             type="number"
@@ -48,11 +52,12 @@ function VariablesForm({ onUpdate }) {
             name="monthlyContribution"
             value={monthlyContribution}
             onChange={({ target }) =>
-              setState({ ...state, monthlyContribution: Number(target.value) })}
-          /><br /><br />
-        </label>
+              setState({ ...state, monthlyContribution: Number(target.value) })
+            }
+          />
+        </label> */}
       </div>
-      <button type="button" onClick={() => onUpdate(state)}>
+      <button type="button" class="button" onClick={() => onUpdate(state)}>
         Update Chart
       </button><br /><br />
     </section>

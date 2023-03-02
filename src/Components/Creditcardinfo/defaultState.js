@@ -1,7 +1,7 @@
 const defaultState = {
-    initialAmount: 10000,
-    period: 5,
-    Apr: 12.5
+    initialAmount: 1,
+    period: 1,
+    Apr: 1
   };
 
   export default defaultState;

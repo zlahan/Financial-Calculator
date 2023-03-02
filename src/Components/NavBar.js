@@ -6,10 +6,10 @@ const NavBar = () => {
         <nav>
             <nav>
                 <nav>
-                    <NavLink to="/Home"><button onClick = "Home" class = "button"> Home sweet home </button></NavLink>
-                    <NavLink to="/Login"><button onClick = "#Login" class = "button"> Login :D </button></NavLink>
-                    <NavLink to="/Register"><button onClick = "#Register" class = "button"> Register! </button></NavLink>
-                    <NavLink to="/Userdetails"><button onClick = "#Userdetails" class = "button"> Yo Detailz </button></NavLink>
+                    <NavLink to="/Home"><button onClick = "Home" class = "button"> Home </button></NavLink>
+                    <NavLink to="/Login"><button onClick = "#Login" class = "button"> Login / Register </button></NavLink>
+                    {/* <NavLink to="/Register"><button onClick = "#Register" class = "button"> Register </button></NavLink> */}
+                    <NavLink to="/Userdetails"><button onClick = "#Userdetails" class = "button"> User Details </button></NavLink>
                 </nav>
             </nav>
         </nav>

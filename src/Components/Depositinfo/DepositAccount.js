@@ -2,8 +2,8 @@ import * as React from "react";
 import { NavLink } from 'react-router-dom';
 import VariablesForm from "./VariableForm";
 import CompoundInterestChart from "./Depositaccountform";
-
 import defaultState from "./defaultState";
+
 
 function DepositAccount() {
   const [state, setState] = React.useState(defaultState);

@@ -1,5 +1,6 @@
 import * as React from "react";
 import defaultState from "./defaultState";
+import "../Home.css"
 
 function VariablesForm({ onUpdate }) {
   const [state, setState] = React.useState(defaultState);
@@ -11,8 +12,9 @@ function VariablesForm({ onUpdate }) {
       <h2>Financials</h2>
       <div className="flex">
         <label htmlFor="initialAmount">
-          Balance ($)
+          Balance ($): 
           <input
+            class="box"
             type="number"
             id="initialAmount"
             name="initialAmount"
@@ -21,8 +23,9 @@ function VariablesForm({ onUpdate }) {
           /><br /><br />
         </label>
         <label htmlFor="period">
-           Length (Years)
-          <input
+           Length (Years): 
+          <input  
+            class="box"
             type="number"
             id="period"
             name="period"
@@ -31,8 +34,9 @@ function VariablesForm({ onUpdate }) {
           /><br /><br />
         </label>
         <label htmlFor="Apr">
-          Apr (%)
+          APR (%): 
           <input
+            class="box"
             type="number"
             id="Apr"
             name="Apr"
@@ -41,7 +45,7 @@ function VariablesForm({ onUpdate }) {
           /><br /><br />
         </label>
       </div>
-      <button type="button" onClick={() => onUpdate(state)}>
+      <button type="button" class="button" onClick={() => onUpdate(state)}>
         Update Chart
       </button><br /><br />
     </section>

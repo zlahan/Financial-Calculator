@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default class Register extends Component {
   constructor(props){
@@ -96,7 +97,7 @@ export default class Register extends Component {
           </button>
         </div>
         <div>
-          Already registered? <a href="/sign-in">sign in</a>
+          Already registered? <NavLink to="/Login">Log in!</NavLink>
         </div>
         <br />
       </form>
