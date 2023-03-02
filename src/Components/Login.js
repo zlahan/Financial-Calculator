@@ -50,7 +50,7 @@ export default class Login extends Component {
         <div>
           <label>Username: </label>
           <input
-            type="text"
+            class="text"
             placeholder="Enter Username"
             onChange={(e) => this.setState({uname: e.target.value})}
           />
@@ -59,7 +59,7 @@ export default class Login extends Component {
         <div>
           <label>Password: </label>
           <input
-            type="text"
+            class="text"
             placeholder="Enter password"
             onChange={(e) => this.setState({password: e.target.value})}
           />
@@ -72,18 +72,18 @@ export default class Login extends Component {
               id="customCheck1"
             />
             <label>
-              Remember me
+              : Remember me?
             </label>
           </div>
         </div>
 
         <div>
-          <button type="submit">
+          <button class="button" type="submit">
             Submit
           </button>
         </div>
         <div>
-          Forgot your <a href="#">password?</a>
+          Forgot your <NavLink to="https://tinyurl.com/4up77t8s">password?</NavLink>
         </div>
         <br />
         <div>
